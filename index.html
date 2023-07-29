@@ -396,7 +396,29 @@
           </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <div class="container mt-5">
+      <h1>Mail Me</h1>
+      <form action="mailto:recipient@example.com" method="post" enctype="text/plain">
+        <div class="mb-3">
+          <label for="senderName" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="senderName" name="senderName" required>
+        </div>
+        <div class="mb-3">
+          <label for="senderEmail" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="senderEmail" name="senderEmail" required>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Email</button>
+      </form>
+    </div><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
